@@ -1,4 +1,4 @@
-# Recordio
+# Recordio (Currently Working)
 
 Recordio is a full-stack application with **client (React)** and **server (Node.js + TypeScript)** components.  
 Follow this guide to run the project locally or with Docker.
