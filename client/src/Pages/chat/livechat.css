@@ -1,0 +1,46 @@
+.live-chat {
+  flex: 1;
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-box {
+  flex: 1;
+  background: #111827;
+  border-radius: 8px;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 60vh;
+}
+
+.you {
+  color: #38bdf8;
+}
+
+.ai {
+  color: #facc15;
+}
+
+.chat-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+}
+
+.chat-input button {
+  background: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}

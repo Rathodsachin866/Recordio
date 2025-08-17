@@ -1,0 +1,181 @@
+/* ===== Page Container ===== */
+.meeting-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #1e1e2f, #12121a);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Header ===== */
+.meeting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: #1a1a24;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.end-btn {
+  background-color: #e63946;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.end-btn:hover {
+  background-color: #c5303b;
+}
+
+/* ===== Main Layout ===== */
+.meeting-main {
+  display: flex;
+  flex: 1;
+  gap: 16px;
+  padding: 16px;
+  flex-wrap: wrap;
+}
+
+/* ===== Video Section ===== */
+.video-section {
+  flex: 1;
+  background-color: #202030;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-placeholder {
+  background-color: #2a2a3d;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.controls {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.mute-btn,
+.share-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mute-btn {
+  background-color: #0077ff;
+}
+
+.mute-btn:hover {
+  background-color: #005fcc;
+}
+
+.share-btn {
+  background-color: #38a169;
+}
+
+.share-btn:hover {
+  background-color: #2f855a;
+}
+
+/* ===== Chat Section ===== */
+.chat-section {
+  width: 300px;
+  background-color: #202030;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  padding: 12px;
+  font-weight: bold;
+  border-bottom: 1px solid #2f2f42;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat-message {
+  background-color: #2f2f42;
+  padding: 8px 10px;
+  border-radius: 6px;
+  max-width: 80%;
+}
+
+.chat-message.self {
+  align-self: flex-end;
+  background-color: #0077ff;
+}
+
+.chat-input {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #2f2f42;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.send-btn {
+  background-color: #0077ff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background-color: #005fcc;
+}
+
+/* ===== Icon Styling ===== */
+.icon {
+  font-size: 14px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .meeting-main {
+    flex-direction: column;
+  }
+
+  .chat-section {
+    width: 100%;
+    min-height: 200px;
+  }
+}

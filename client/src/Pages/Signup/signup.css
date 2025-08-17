@@ -1,0 +1,92 @@
+/* signup.css */
+
+.form-wrapper {
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* LEFT SIDE - Welcome Text */
+.welcome-section {
+  flex: 1;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  color: white;
+}
+
+.welcome-section h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.welcome-section p {
+  font-size: 16px;
+  max-width: 450px;
+  line-height: 1.5;
+}
+
+/* RIGHT SIDE - Form */
+.form-container {
+  flex: 1;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.form-container h1 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #4c4c4c;
+}
+
+form {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px 15px;
+  font-size: 14px;
+  color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+input::placeholder {
+  color: #000000;
+  opacity: 1; /* ensures it's fully visible */
+}
+input:focus {
+  border-color: #6a11cb;
+}
+
+button {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+}
+
+p {
+  font-size: 14px;
+  margin-top: 10px;
+}

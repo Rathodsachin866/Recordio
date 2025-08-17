@@ -1,0 +1,111 @@
+.features-services-section {
+  position: relative;
+  background-color: #91acb1;
+  text-align: center;
+  padding: 60px 20px;
+  overflow: hidden;
+  height: 500px;
+}
+/* #a7cbc0; */
+/* Bubble styling */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+.bubble1 {
+  width: 180px;
+  height: 180px;
+  background: white;
+  top: 50px;
+  left: 60px;
+}
+.bubble2 {
+  width: 140px;
+  height: 140px;
+  background: white;
+  top: 200px;
+  left: 200px;
+}
+.bubble3 {
+  width: 160px;
+  height: 160px;
+  background: white;
+  bottom: 80px;
+  right: 150px;
+}
+.bubble4 {
+  width: 120px;
+  height: 120px;
+  background: white;
+  bottom: 200px;
+  right: 50px;
+}
+
+/* Titles */
+.subtitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2f4f4f;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.main-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1f3c3c;
+  margin-bottom: 40px;
+}
+
+/* Features grid */
+.features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Feature cards */
+.feature-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px 20px;
+  width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.feature-card h3 {
+  margin: 15px 0;
+  color: #1f3c3c;
+  font-size: 20px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Icons */
+.feature-icon {
+  font-size: 40px;
+  color: #1f3c3c;
+}
+
+/* More button */
+.more-btn {
+  background-color: #1f7a6f;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.more-btn:hover {
+  background-color: #155a50;
+}

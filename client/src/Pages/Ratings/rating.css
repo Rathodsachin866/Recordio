@@ -1,0 +1,79 @@
+/* HeroSection.css */
+.hero-container {
+  position: relative;
+  background-color: #0c0c0c;
+  color: white;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.text-section {
+  z-index: 2;
+}
+
+.text-solid {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.text-outline {
+  font-size: 5rem;
+  font-weight: bold;
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+
+.big {
+  font-size: 4.5rem;
+}
+
+.circle-shape {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.green-circle {
+  width: 120px;
+  height: 120px;
+  background-color: #4de2a0;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.wave-lines {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(transparent 70%, #0c0c0c 71%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px transparent, 0 0 0 6px white;
+  opacity: 0.4;
+  animation: waveMove 4s infinite linear;
+}
+
+@keyframes waveMove {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: #25d366;
+  background: white;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

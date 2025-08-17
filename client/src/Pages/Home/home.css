@@ -1,0 +1,309 @@
+/* === HERO SECTION === */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  
+
+}
+
+
+body {
+  background: rgb(0, 0, 0);
+  background-attachment: fixed; /* Stays fixed on scroll */
+}
+
+.home-container {
+  /* padding: 40px; */
+  text-align: center;
+  /* background-color: #8686AC; */
+  color: white;
+}
+/* HeroSection.css */
+.hero-container {
+   position: relative;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%), 
+    url('../../assets/podimage.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.text-section {
+  z-index: 2;
+}
+
+.text-solid {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.text-outline {
+  font-size: 7rem;
+  font-weight: bold;
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+
+.big {
+  font-size: 6.5rem;
+  font-style: italic;
+}
+.hero-container .text-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  max-width: 500px;
+  
+  margin: 15px 30px 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-container .create-btn button {
+  background: linear-gradient(135deg, #ff4d4d, #ff9933);
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  margin-left: 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-container .create-btn button:hover {
+  background: linear-gradient(135deg, #ff6666, #ffaa55);
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(255, 77, 77, 0.4);
+}
+
+
+.circle-shape {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.green-circle {
+  width: 120px;
+  height: 120px;
+  background-color: #4de2a0;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.wave-lines {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(transparent 70%, #0c0c0c 71%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px transparent, 0 0 0 6px white;
+  opacity: 0.4;
+  animation: waveMove 4s infinite linear;
+}
+
+@keyframes waveMove {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: #25d366;
+  background: white;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.bg_image {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.home-hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.home-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home-subtitle {
+  font-size: 1.3rem;
+  color: #f4411e;
+  margin-bottom: 30px;
+}
+
+/* === FEATURES SECTION === */
+.features-section {
+  /* background-color: #000; */
+  margin-top: 0; /* <-- change this */
+  padding: 30px;
+  color: white;
+}
+
+
+.features-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* responsive for mobile */
+}
+
+.features-image img {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.features-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.features-title {
+  font-size: 6rem;
+  color: #f4411e;
+  margin-bottom: 20px;
+}
+
+.features-description {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  color: #e0ffe0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+
+/* === GRID CARDS (If used later) === */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.home-card {
+  background-color: #00e676;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  color: black;
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+}
+
+.home-card h3 {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.home-card p {
+  color: #111;
+  font-size: 0.95rem;
+}
+
+/* === SHARED SECTION STYLES === */
+.about-section,
+.contact-section,
+.benefits-section {
+  margin-top: 60px;
+  background-color: #000;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about-section p,
+.benefits-list,
+.features-list {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #e0ffe0;
+  font-size: 1.05rem;
+  text-align: left;
+}
+
+/* === BENEFITS SECTION === */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  color: #e0ffe0;
+}
+
+.benefits-list li {
+  margin-bottom: 10px;
+}
+
+/* === CONTACT FORM === */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #00e676;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* === DIVIDER === */
+.section-divider {
+  border: none;
+  border-top: 1px solid #ffffff;
+  margin: 60px auto;
+  width: 80%;
+}

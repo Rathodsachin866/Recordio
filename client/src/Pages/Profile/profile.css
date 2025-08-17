@@ -1,0 +1,104 @@
+/* Container that wraps the whole layout */
+.profile-container {
+  padding: 20px;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Flex layout for profile and graph */
+.profile-layout {
+  display: flex;
+  flex-wrap: wrap; /* allow wrap on smaller screens */
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Left side: Profile card */
+.profile-card {
+  flex: 1 1 300px; /* grow/shrink, min width 300px */
+  max-width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Right side: Graph */
+.profile-graph {
+  flex: 2 1 500px; /* grow more, min width 500px */
+  max-width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Avatar section */
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.avatar-preview {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.avatar-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* Form styling */
+.profile-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.profile-form input[type="text"],
+.profile-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.profile-form button {
+  padding: 8px 16px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-form button:hover {
+  background-color: #005dcc;
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 768px) {
+  .profile-layout {
+    flex-direction: column;
+  }
+
+  .profile-card,
+  .profile-graph {
+    width: 100%;
+  }
+}

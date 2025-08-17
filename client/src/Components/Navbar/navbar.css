@@ -1,0 +1,104 @@
+.navbar {
+  background: url('/path/to/your/image.jpg') no-repeat center center;
+  background-size: cover;
+  color: black;
+  padding: 16px 40px;
+  display: flex;
+  font-weight: 700; /* fixed: px was incorrect */
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'MADE TOMMY', sans-serif;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
+  backdrop-filter: blur(6px);
+  transition: background-color 0.3s ease, color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.5) url('/path/to/your/image.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  border-bottom: none;
+}
+
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+      font-family: 'MADE TOMMY', sans-serif;
+  font-weight: 700px;
+  align-items: center;
+}
+
+.navbar-links a {
+
+  text-decoration: none;
+  color: inherit; /* automatically changes with navbar text color */
+  transition: color 0.3s ease;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+/* === HOVER EFFECT (modern underline) === */
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #00e676;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+.navbar-links .signin-btn {
+  padding: 8px 16px;
+  border: 2px solid #ffde59;
+  border-radius: 20px;
+  color: #ffde59;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.navbar-links .signin-btn:hover {
+  background: #ffde59;
+  color: #000;
+}
+
+/* 🔹 Sign Up button style */
+.navbar-links .signup-btn {
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #ff7f50, #ff4b2b);
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.navbar-links .signup-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* === RESPONSIVE (Optional) === */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+}
