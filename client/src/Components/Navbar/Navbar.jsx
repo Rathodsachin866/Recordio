@@ -50,9 +50,9 @@ function Navbar() {
         ) : (
           <div className="profile-container">
             <img
-              src={user.avatar || "/default-avatar.png"}
+              src={user.avatar || ""}
               alt="Profile"
-              className="profile-img"
+              className=""
               onClick={() => navigate("/profile")}
             />
             <button onClick={handleLogout} className="logout-btn">Logout</button>
